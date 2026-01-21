@@ -1,0 +1,26 @@
+---
+layout: post
+title: "EndoSLAM: Monocular Depth Estimation + 3D Reconstruction"
+date: 2025-05-15 12:00:00 +0000
+image: /images/endo-slam.jpg
+categories: research
+authors: "Shivank Gupta"
+venue: "Course/Project"
+code: ""
+video: ""
+website: ""
+---
+
+**Goal.** Estimate depth from monocular laparoscopic video and reconstruct a consistent 3D scene representation.
+
+**Approach.**
+- 3-layer CNN with ResNet-18 backbone
+- Depth prediction + qualitative validation via point clouds / reconstructions
+
+**Results.**
+- Reduced MSE to **0.0125**
+- Increased SSIM to **0.8633**
+
+**What I learned.**
+- How to evaluate depth beyond a single metric (consistency, artifacts, failure cases)
+- Practical tradeoffs in model capacity vs inference constraints
